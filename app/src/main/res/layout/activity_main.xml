@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@color/Linen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/kitchen2"
+        android:contentDescription="@string/logo"
+        />
+
+    <EditText
+        android:id="@+id/RecipeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:minLines="1"
+        android:scrollHorizontally="false"
+        android:gravity="center_horizontal"
+        android:hint="@string/Recipe_Name"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/DarkSlateGrey"
+        />
+
+    <EditText
+        android:id="@+id/OriginalServings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RecipeName"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="35dp"
+        android:textAlignment="center"
+        android:hint="@string/original_servings"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/DarkSlateGrey"/>
+
+    <EditText
+        android:id="@+id/DesiredServings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RecipeName"
+        android:hint="@string/desired_servings"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/DarkSlateGrey"
+        />
+
+
+    <TextView
+        android:id="@+id/qnty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RecipeName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/quantity"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/Salmon"
+        />
+
+    <TextView
+        android:id="@+id/measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RecipeName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/measure"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/Salmon"
+        />
+
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RecipeName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:text="@string/ingredient"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/Salmon"
+        />
+
+    <EditText
+        android:id="@+id/qnty1"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/qnty"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="26dp"
+        android:hint="@string/quantity_example"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/RosyBrown"
+        android:gravity="center_horizontal" />
+
+    <Spinner
+        android:id="@+id/measure1"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/measure"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="1dp"
+         />
+
+    <EditText
+        android:id="@+id/ingredient1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingredient"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:minLines="1"
+        android:scrollHorizontally="false"
+        android:hint="@string/example_ingredient1"
+        android:gravity="center"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/RosyBrown"
+        />
+
+    <EditText
+        android:id="@+id/qnty2"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/qnty1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:hint="@string/quantityExample2"
+        android:inputType="numberDecimal"
+        android:textColor="@color/RosyBrown"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <Spinner
+        android:id="@+id/measure2"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/measure1"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="1dp"
+         />
+
+    <EditText
+        android:id="@+id/ingredient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingredient1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/exampleIngredient2"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:inputType="textCapSentences|textMultiLine"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:minLines="1"
+        android:scrollHorizontally="false"
+        android:textColor="@color/RosyBrown"/>
+
+    <EditText
+        android:id="@+id/qnty3"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/qnty2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:hint="@string/quantityExample3"
+        android:inputType="numberDecimal"
+        android:textColor="@color/RosyBrown"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <Spinner
+        android:id="@+id/measure3"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/measure2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="106dp" />
+
+    <EditText
+        android:id="@+id/ingredient3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingredient2"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/exampleIngredient3"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:inputType="textCapSentences|textMultiLine"
+        android:layout_alignParentRight="true"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:minLines="1"
+        android:scrollHorizontally="false"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/RosyBrown"
+        />
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/measure3"
+        android:layout_centerHorizontal="true"
+        android:text="@string/get_resized_recipe"
+        android:onClick="Results"
+        android:textColor="@color/Chocolate"
+        android:backgroundTint="@color/NavajoWhite"
+        />
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Kitchen_Time</string>
+    <string name="recipe_name">Enter Name of Recipe (Optional)</string>
+    <string name="quantity">Quantity</string>
+    <string name="measurement">Measurement</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="Recipe_Name">Enter Recipe Name (Optional)</string>
+    <string name="original_servings">Original Servings</string>
+    <string name="desired_servings">Desired Servings</string>
+    <string name="measure">Measure</string>
+    <string name="add_ingredient">+ ADD INGREDIENT</string>
+    <string name="quantity_example">e.g. 1</string>
+    <string name="example_ingredient1">e.g. Ingredient1</string>
+    <string name="exampleIngredient2">e.g. Ingredient2</string>
+    <string name="exampleIngredient3">e.g. Ingredient3</string>
+    <string name="quantityExample2">e.g. 2</string>
+    <string name="quantityExample3">e.g. 3</string>
+    <string name="get_resized_recipe">GET RESIZED RECIPE</string>
+    <string name="resized_recipe">Resized Recipe</string>
+    <string name="close_app_btn">Close App</string>
+    <string name="logo">Logo</string>
+    <string name="let_s_get_cooking">LET\'S GET COOKING!</string>
+    <string name="me">118640 Tevin Musau Mutua ICS 3A</string>
+    <string-array name="measurements_options">
+        <item> Select </item>
+        <item> Tablespoon </item>
+        <item> Teaspoon </item>
+        <item> Cups </item>
+        <item> Pinch </item>
+        <item> Pounds </item>
+        <item> Ounce </item>
+    </string-array>
+</resources>
